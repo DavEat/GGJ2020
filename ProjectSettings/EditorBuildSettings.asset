@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/EsherLocomotion/_Scenes/Loop.unity
+    guid: c48f08555db4c3942b1c7aff9252c09d
   m_configObjects: {}
