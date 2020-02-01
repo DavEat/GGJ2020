@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 7313290108303556242}
   m_Layer: 0
   m_Name: sphereKiller3
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7313290108854050636}
   m_Layer: 0
   m_Name: sphereKiller4
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 7313290109304608906}
   m_Layer: 0
   m_Name: sphereKiller2
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 7313290109411204682}
   m_Layer: 0
   m_Name: sphereKiller0
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 7313290109462222071}
   m_Layer: 0
   m_Name: sphereKiller1
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 7313290109503888129}
   m_Layer: 0
   m_Name: sphereKiller5
-  m_TagString: SphereKiller
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,6 +12,10 @@ public class SphereManager : MonoBehaviour
     {
         if (sphere)
         {
+            Rigidbody rb = sphere.GetComponent<Rigidbody>();
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+
             if (dontSnap)
             {
                 sphere.position = startSnap.transform.position;

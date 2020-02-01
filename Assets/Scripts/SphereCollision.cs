@@ -13,7 +13,7 @@ public class SphereCollision : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("SphereKiller"))
+        if (other.CompareTag("SphereKiller") || other.CompareTag("Outside"))
         {
             SphereManager.inst.ReplaceSphere(transform, m_dontSnap);
         }
