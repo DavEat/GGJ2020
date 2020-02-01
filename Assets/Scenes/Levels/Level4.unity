@@ -1771,7 +1771,7 @@ PrefabInstance:
     - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
       propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5923846573411314946, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
