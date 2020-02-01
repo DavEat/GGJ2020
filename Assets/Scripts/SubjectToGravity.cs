@@ -19,6 +19,7 @@ public class SubjectToGravity : MonoBehaviour
     void ApplyGravity()
     {
         if (!useGravity) return;
-            m_rb.AddForce(Gravity.orientation);
+
+        m_rb.AddForce(Gravity.orientation);
     }
 }

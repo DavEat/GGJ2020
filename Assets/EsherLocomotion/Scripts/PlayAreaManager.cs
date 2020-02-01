@@ -1,32 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.XR;
+﻿using UnityEngine;
 
 public class PlayAreaManager : MonoBehaviour
 {
-    public Vector2 paddingLowerRightCorner;
-    public float startYRotation;
-
     public GameObject _geometryWrapper;
-    public GameObject _startGeomWrapper;
-    public Transform _playArea;
+    public CalibrationStartPosition _startPosition;
+    public float _startYRotation;
+
+    [Space(30)]
+    public GameObject _calibrationWrapper;
     public Transform _head;
     public Transform _startPoint;
+    public GameObject _playAreaReference;
 
     private Vector3 _playAreaBounds;
 
     private bool _playerInCorrectPosition;
 
-    [Header("Debug")]
-    public Transform _debugPlayArea;
-    public GameObject _debugBoundsCenter;
-
     void Start() {
-        _geometryWrapper.SetActive(false);
-        _startGeomWrapper.SetActive(true);
-
+        ShowCalibrationArea(true);
         SetPlayArea();
     }
 	
@@ -35,11 +26,15 @@ public class PlayAreaManager : MonoBehaviour
 	        CheckPlayerPos();
 	}
 
-    private void CheckPlayerPos() {
-        if(HeadOvertarget()){
-            _geometryWrapper.SetActive(true);
-            _startGeomWrapper.SetActive(false);
+    private void ShowCalibrationArea(bool show) {
+        if(_geometryWrapper != null)
+            _geometryWrapper.SetActive(!show);
+        _calibrationWrapper.SetActive(show);
+    }
 
+    private void CheckPlayerPos() {
+        if(HeadOvertarget()) {
+            ShowCalibrationArea(false);
             _playerInCorrectPosition = true;
         }
     }
@@ -50,29 +45,38 @@ public class PlayAreaManager : MonoBehaviour
     }
 
     private void SetPlayArea() {
-        CalcBoundsPos();
-        PositionGeometry();
+        _startPoint.localPosition = GetStartPosPosition(_startPosition);
+        _startPoint.localEulerAngles = new Vector3(0, _startYRotation, 0);
 
-        _startPoint.position = _geometryWrapper.transform.position;
+        if(_playAreaReference != null)
+            _playAreaReference.SetActive(false);
     }
 
-    private void CalcBoundsPos() {
-        _playAreaBounds = OVRManager.boundary.GetDimensions(OVRBoundary.BoundaryType.PlayArea);
-
-        if (_debugPlayArea != null && _debugBoundsCenter != null) {
-            _debugPlayArea.localScale = new Vector3(_playAreaBounds.x, 0.01f, _playAreaBounds.z);
-            _debugBoundsCenter.transform.position = Vector3.zero;
+    private Vector3 GetStartPosPosition(CalibrationStartPosition startPos) {
+        switch (startPos) {
+            case CalibrationStartPosition.A1:
+                return new Vector3(-1f, 0 , 1f);
+            case CalibrationStartPosition.A2:
+                return new Vector3(0, 0, 1f);
+            case CalibrationStartPosition.A3:
+                return new Vector3(1f, 0, 1f);
+            case CalibrationStartPosition.B1:
+                return new Vector3(-1f, 0, 0);
+            case CalibrationStartPosition.B3:
+                return new Vector3(1f, 0, 0);
+            case CalibrationStartPosition.C1:
+                return new Vector3(-1f, 0, -1f);
+            case CalibrationStartPosition.C2:
+                return new Vector3(0, 0, -1f);
+            case CalibrationStartPosition.C3:
+                return new Vector3(1f, 0, -1f);
+            default:
+            case CalibrationStartPosition.B2:
+                return new Vector3(0, 0, 0);
         }
     }
+}
 
-    private void PositionGeometry() {
-        _geometryWrapper.transform.position = Vector3.zero;
-        _geometryWrapper.transform.rotation = Quaternion.identity;
-
-        _geometryWrapper.transform.Translate(new Vector3(
-            _playAreaBounds.x / 2f - paddingLowerRightCorner.x,
-            0 , 
-            _playAreaBounds.z / 2f - paddingLowerRightCorner.y));
-        _geometryWrapper.transform.Rotate(new Vector3(0, startYRotation, 0));
-    }
+public enum CalibrationStartPosition {
+    A1,A2,A3,B1,B2,B3,C1,C2,C3
 }
