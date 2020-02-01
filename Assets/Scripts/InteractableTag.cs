@@ -6,6 +6,7 @@ public class InteractableTag : MonoBehaviour
     {
         none = 0,
         key,
+        plank
     }
 
     public Tag tag;
