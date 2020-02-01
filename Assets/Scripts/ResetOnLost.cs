@@ -21,7 +21,6 @@ public class ResetOnLost : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
 
-            m_transform.position = m_startPosition.position;
-        }
+            m_transform.position = m_startPosition.position;        }
     }
 }
