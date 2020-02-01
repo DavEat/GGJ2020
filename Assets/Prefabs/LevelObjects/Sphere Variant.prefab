@@ -13,6 +13,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &376879696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720390586514130142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63dd404f41af945af3725c532ab6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4517294043019599268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49,17 +61,17 @@ PrefabInstance:
     - target: {fileID: 3985669815025932670, guid: 5104471f2146b684bb2a3eb404075b26,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7307
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3985669815025932670, guid: 5104471f2146b684bb2a3eb404075b26,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.102
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3985669815025932670, guid: 5104471f2146b684bb2a3eb404075b26,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.51113
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3985669815025932670, guid: 5104471f2146b684bb2a3eb404075b26,
         type: 3}
