@@ -823,6 +823,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1170399270}
     m_Modifications:
+    - target: {fileID: 376879696, guid: d66f06a4d45ca8c46a8c347902890452, type: 3}
+      propertyPath: m_dontSnap
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 720390586514130138, guid: d66f06a4d45ca8c46a8c347902890452,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1334,6 +1338,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1170399270}
     m_Modifications:
+    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8407858431893039910}
+    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5923846573411314946, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2491,3 +2510,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ca9e90bb77dc40960cdefac3a1e63, type: 3}
+--- !u!114 &8407858431893039910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1694915145917179856, guid: f74ca9e90bb77dc40960cdefac3a1e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 8407858431893039909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb15d97e3bf959245b41f6a722f5d55b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
