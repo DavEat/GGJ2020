@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 187898649848017135}
   - component: {fileID: 863467864771598315}
   - component: {fileID: 9183390810332777007}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: group_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1337823314627430015}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grass_edge_full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 3597360882742513027}
   - component: {fileID: 1797907765263249004}
   - component: {fileID: 776319657174049240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
