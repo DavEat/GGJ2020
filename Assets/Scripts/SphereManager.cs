@@ -8,7 +8,7 @@ public class SphereManager : MonoBehaviour
     [Header("Sphere")]
     [SerializeField] DraggableSnap startSnap;
 
-    public void ReplaceSphere(Transform sphere, bool dontSnap)
+    public void ReplaceSphere(Transform sphere, bool dontSnap, bool grab = false)
     {
         if (sphere)
         {
@@ -24,7 +24,11 @@ public class SphereManager : MonoBehaviour
             {
                 OVRGrabbableEvent e = sphere.GetComponent<OVRGrabbableEvent>();
                 if (e)
+                {
+                    if (e.grabbedBy)
+                        e.grabbedBy.ForceRelease(e);
                     startSnap.ForceSnap(e);
+                }
             }
         }
     }
