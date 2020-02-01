@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -894,10 +894,52 @@ PrefabInstance:
       propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8407858431893039910}
+    - target: {fileID: 5234041187155891984, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5495902117074765545, guid: bbd12ef2b76311049af3c32840188402,
+        type: 3}
     - target: {fileID: 5259836288207389987, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
       propertyPath: m_Name
       value: Piedestral
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644512144062195039, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2534964839176971238, guid: bbd12ef2b76311049af3c32840188402,
+        type: 3}
+    - target: {fileID: 5931991618907934558, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931991618907934558, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931991618907934558, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014822171470701171, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014822171470701171, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014822171470701171, guid: 28a15f99c9597d749b28010cc3df742c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9125956288316536624, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
