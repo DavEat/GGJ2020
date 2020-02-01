@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817555720421642073}
   - component: {fileID: 2097300856118344786}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2843468124221811096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ramp_180
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5586706398362315640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: instance_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 8509228125633295377}
   - component: {fileID: 9010878559536202396}
   - component: {fileID: 113627920754472228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 7572956763628696386}
   - component: {fileID: 8318714272591856480}
   - component: {fileID: 5757263331542689042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Component_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 5558182191697951885}
   - component: {fileID: 8027204594624839447}
   - component: {fileID: 8467605844938019637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
