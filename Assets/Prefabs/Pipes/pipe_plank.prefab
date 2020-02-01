@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1161879533553090653}
   - component: {fileID: -8877798257963899334}
   - component: {fileID: 448876862}
+  - component: {fileID: 629359225015752685}
   m_Layer: 0
   m_Name: pipe_plank
   m_TagString: Untagged
@@ -198,3 +199,16 @@ MonoBehaviour:
   onUnsnap:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &629359225015752685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586318196448474241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.66, y: 0.2771639, z: 0.11}
+  m_Center: {x: -0.015407711, y: 0, z: 0.023659261}
