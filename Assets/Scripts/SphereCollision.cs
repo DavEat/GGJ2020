@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SphereCollision : MonoBehaviour
 {
+    [SerializeField] bool m_snapAtStart = true;
+
     void Start()
     {
-        SphereManager.inst.ReplaceSphere(transform);
+        if (m_snapAtStart)
+            SphereManager.inst.ReplaceSphere(transform);
     }
     void OnTriggerEnter(Collider other)
     {

@@ -11,7 +11,7 @@ public class SphereManager : Singleton<SphereManager>
         {
             OVRGrabbableEvent e = sphere.GetComponent<OVRGrabbableEvent>();
             if (e)
-                startSnap.SnapObject(e);
+                startSnap.ForceSnap(e);
         }
     }
 }
