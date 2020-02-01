@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8173045855508887554}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1989901676240141026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: instance_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 8235819326219021488}
   - component: {fileID: 7629954143550615119}
   - component: {fileID: 8609466730366185932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Component_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}

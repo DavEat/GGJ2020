@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class DraggableSnap : MonoBehaviour
 {
-    [SerializeField] Transform m_snapPoint;
-    [SerializeField] GameObject m_mesh;
+    [SerializeField] Transform m_snapPoint = null;
+    [SerializeField] GameObject m_mesh  = null;
     [SerializeField] InteractableTag.Tag m_snapTag;
 
-    OVRGrabbableEvent m_snappedObject;
+    OVRGrabbableEvent m_snappedObject = null;
 
     int m_numberOfObjIn = 0;
+
+    [SerializeField] UnityEvent onSnap = null; 
+    [SerializeField] UnityEvent onUnsnap = null;
 
     void OnTriggerEnter(Collider other)
     {
@@ -54,6 +58,8 @@ public class DraggableSnap : MonoBehaviour
 
         obj.GetComponent<Rigidbody>().isKinematic = true;
 
+        if (onSnap != null)
+            onSnap.Invoke();
 
         obj.transform.position = m_snapPoint.position;
         obj.transform.rotation = m_snapPoint.rotation;
@@ -71,6 +77,9 @@ public class DraggableSnap : MonoBehaviour
 
         if (m_mesh)
             m_mesh.SetActive(true);
+
+        if (onUnsnap != null)
+            onUnsnap.Invoke();
 
         obj.grabEnd += SnapObject;
         obj.grabBegin -= ReleaseObject;

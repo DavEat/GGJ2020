@@ -7,10 +7,12 @@ public class Repositioner : MonoBehaviour
 
     private Ray _ray;
     private RaycastHit _hit;
+    [SerializeField] float _distance = 3f;
+    [SerializeField] LayerMask _layerMask;
 
 	void Update () {
         _ray = new Ray(_head.position, -_playArea.up);
-	    if (Physics.Raycast(_ray, out _hit)) {
+	    if (Physics.Raycast(_ray, out _hit, _distance, _layerMask)) {
 	        var cross = Vector3.Cross(_playArea.up, _hit.normal);
 
             //correct playarea angle if walking on walls
