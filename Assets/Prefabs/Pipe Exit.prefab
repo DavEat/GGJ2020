@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629484154534372035}
   m_Layer: 0
-  m_Name: Floor (3)
+  m_Name: Pipe Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,7 +122,6 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.5, z: 1}
   m_Children:
   - {fileID: 8965795889034338339}
-  - {fileID: 9183763803887281961}
   - {fileID: 6045981319792644741}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -158,80 +157,6 @@ Transform:
   m_Father: {fileID: 1629484154534372035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4733255654215942823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9183763803887281961}
-  - component: {fileID: 1485089095501844433}
-  m_Layer: 0
-  m_Name: skp_camera_Last_Saved_SketchUp_View
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9183763803887281961
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733255654215942823}
-  m_LocalRotation: {x: 0.93611836, y: -0.071678735, z: -0.02628633, w: 0.34329805}
-  m_LocalPosition: {x: 0.4037162, y: 3.712629, z: 3.5756648}
-  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1629484154534372035}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &1485089095501844433
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4733255654215942823}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 0
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 0.00254, y: 15.5448}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 0
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.0254
-  far clip plane: 25.4
-  field of view: 35
-  orthographic: 0
-  orthographic size: 1.635949
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &6045981319792644737
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +188,7 @@ Transform:
   m_LocalScale: {x: 0.049999993, y: 0.5, z: 0.10000002}
   m_Children: []
   m_Father: {fileID: 1629484154534372035}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &6045981319792644740
 MeshFilter:
