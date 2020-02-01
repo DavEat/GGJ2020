@@ -52,7 +52,23 @@ public class DraggableSnap : MonoBehaviour
     public void ForceSnap(OVRGrabbableEvent obj)
     {
         m_numberOfObjIn++;
-        SnapObject(obj);
+
+        m_snappedObject = obj;
+
+        obj.GetComponent<Rigidbody>().isKinematic = true;
+
+        if (onSnap != null)
+            onSnap.Invoke();
+
+        obj.transform.position = m_snapPoint.position;
+        obj.transform.rotation = m_snapPoint.rotation;
+
+        if (m_mesh)
+            m_mesh.SetActive(false);
+
+        if (obj.grabEnd != null)
+            obj.grabEnd -= SnapObject;
+        obj.grabBegin += ReleaseObject;
     }
     public void SnapObject(OVRGrabbableEvent obj)
     {

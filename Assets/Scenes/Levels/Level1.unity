@@ -940,36 +940,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SphereKillerBoundries
       objectReference: {fileID: 0}
-    - target: {fileID: 7313290108303556242, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313290108854050636, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313290109304608906, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313290109411204682, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313290109462222071, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7313290109503888129, guid: 81bea1ecce093e44bba809230c8af331,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81bea1ecce093e44bba809230c8af331, type: 3}
 --- !u!4 &608901860 stripped
@@ -1407,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: 8094632029541199804, guid: 752752e507d0a2a46ae66cf501e57783,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.48184
+      value: 0.492
       objectReference: {fileID: 0}
     - target: {fileID: 8094632029541199804, guid: 752752e507d0a2a46ae66cf501e57783,
         type: 3}
@@ -2409,7 +2379,7 @@ PrefabInstance:
     - target: {fileID: 720390586514130138, guid: d66f06a4d45ca8c46a8c347902890452,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.48184
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 720390586514130138, guid: d66f06a4d45ca8c46a8c347902890452,
         type: 3}
