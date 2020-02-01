@@ -49,6 +49,11 @@ public class DraggableSnap : MonoBehaviour
             m_mesh.SetActive(false);
     }
 
+    public void ForceSnap(OVRGrabbableEvent obj)
+    {
+        m_numberOfObjIn++;
+        SnapObject(obj);
+    }
     public void SnapObject(OVRGrabbableEvent obj)
     {
         if (m_snappedObject != null)
@@ -67,7 +72,8 @@ public class DraggableSnap : MonoBehaviour
         if (m_mesh)
             m_mesh.SetActive(false);
 
-        obj.grabEnd -= SnapObject;
+        if (obj.grabEnd != null)
+            obj.grabEnd -= SnapObject;
         obj.grabBegin += ReleaseObject;
     }
 
@@ -82,7 +88,8 @@ public class DraggableSnap : MonoBehaviour
             onUnsnap.Invoke();
 
         obj.grabEnd += SnapObject;
-        obj.grabBegin -= ReleaseObject;
+        if (obj.grabBegin != null)
+            obj.grabBegin -= ReleaseObject;
     }
 
     void OnTriggerExit(Collider other)
