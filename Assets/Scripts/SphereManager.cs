@@ -3,19 +3,15 @@
 public class SphereManager : Singleton<SphereManager>
 {
     [Header("Sphere")]
-    [SerializeField] Transform startPosition;
+    [SerializeField] DraggableSnap startSnap;
 
     public void ReplaceSphere(Transform sphere)
     {
-        if (startPosition)
+        if (sphere)
         {
-            sphere.position = startPosition.position;
-            Rigidbody rb = sphere.GetComponent<Rigidbody>();
-            if (rb)
-            {
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
+            OVRGrabbableEvent e = sphere.GetComponent<OVRGrabbableEvent>();
+            if (e)
+                startSnap.SnapObject(e);
         }
     }
 }

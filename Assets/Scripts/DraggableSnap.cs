@@ -49,7 +49,7 @@ public class DraggableSnap : MonoBehaviour
             m_mesh.SetActive(false);
     }
 
-    void SnapObject(OVRGrabbableEvent obj)
+    public void SnapObject(OVRGrabbableEvent obj)
     {
         if (m_snappedObject != null)
             return;
@@ -71,7 +71,7 @@ public class DraggableSnap : MonoBehaviour
         obj.grabBegin += ReleaseObject;
     }
 
-    void ReleaseObject(OVRGrabbableEvent obj)
+    public void ReleaseObject(OVRGrabbableEvent obj)
     {
         m_snappedObject = null;
 
