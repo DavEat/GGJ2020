@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1451,20 +1451,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1170399270}
     m_Modifications:
-    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
-        type: 3}
-      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1062445541, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_endFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8407858431893039910}
-    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
-        type: 3}
-      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 3260607505342765511, guid: 28a15f99c9597d749b28010cc3df742c,
-        type: 3}
-      propertyPath: onSnap.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
+    - target: {fileID: 1062445541, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_endFade.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextScene
       objectReference: {fileID: 0}
     - target: {fileID: 5923846573411314946, guid: 28a15f99c9597d749b28010cc3df742c,
         type: 3}
