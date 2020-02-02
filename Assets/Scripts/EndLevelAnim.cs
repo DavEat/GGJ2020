@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -49,5 +50,6 @@ public class EndLevelAnim : MonoBehaviour
     public void End()
     {
         m_end.Invoke();
+        SoundManager.inst.music.FadeMusic();
     }
 }
