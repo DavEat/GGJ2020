@@ -2,8 +2,9 @@
 
 public class Billboard : MonoBehaviour
 {
+    public Transform target;
+
     void Update() {
-        //if (Camera.main && Camera.main.transform)
-            transform.LookAt(Camera.main.transform);
+        transform.LookAt(target);
     }
 }

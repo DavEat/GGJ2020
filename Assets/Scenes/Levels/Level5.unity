@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.091962986, g: 0.2819445, b: 0.4851135, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -612,6 +612,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 59
       objectReference: {fileID: 0}
+    - target: {fileID: 7110167437802872585, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     - target: {fileID: 7110167437802872599, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
         type: 3}
       propertyPath: m_Name
@@ -1371,6 +1376,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 195
       objectReference: {fileID: 0}
+    - target: {fileID: 7110167437802872585, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     - target: {fileID: 7110167437802872599, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
         type: 3}
       propertyPath: m_Name
@@ -1791,6 +1801,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7110167437802872585, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     - target: {fileID: 7110167437802872599, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
         type: 3}
       propertyPath: m_Name
@@ -2056,6 +2071,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 212336513}
     m_Modifications:
+    - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -4.8075854e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.74e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.4033e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 387949556, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     - target: {fileID: 1062445541, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: m_endFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3966,6 +4001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8013325333022159874, guid: d66f06a4d45ca8c46a8c347902890452,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66f06a4d45ca8c46a8c347902890452, type: 3}
 --- !u!4 &1714015103 stripped
@@ -4612,12 +4652,17 @@ PrefabInstance:
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 2.3510604e-38
+      value: -4.8075854e-10
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: 1.4033e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.74e-43
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462098, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
@@ -4867,6 +4912,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -43
       objectReference: {fileID: 0}
+    - target: {fileID: 7110167437802872585, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2125824829}
     - target: {fileID: 7110167437802872599, guid: e061ed5a41a232e4a97dcd01fe17a2fc,
         type: 3}
       propertyPath: m_Name
@@ -5410,6 +5460,12 @@ PrefabInstance:
 --- !u!4 &2125824828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4449342475490835456, guid: 264f285b4bf885043838fb18be64ee07,
+    type: 3}
+  m_PrefabInstance: {fileID: 2125824827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2125824829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4449107955374232138, guid: 264f285b4bf885043838fb18be64ee07,
     type: 3}
   m_PrefabInstance: {fileID: 2125824827}
   m_PrefabAsset: {fileID: 0}
