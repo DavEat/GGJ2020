@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 1679578624369927956}
   - component: {fileID: 1679578624369927958}
   - component: {fileID: 1679578624369927959}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 4183578643416881875, guid: 816b12775ade388458e3334feb9dd3e2,
         type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4183578643416881875, guid: 816b12775ade388458e3334feb9dd3e2,
         type: 3}
