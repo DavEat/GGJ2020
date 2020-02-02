@@ -3,20 +3,28 @@ using UnityEngine;
 
 public class FadeAndSwitchScenes : MonoBehaviour
 {
+    public bool timer = true;
     public float timeUntilFadeAndSwitch;
     public CameraFaderGroup faderGroup;
     public GameManager gameManeger;
 
-    // Start is called before the first frame update
     void Start() {
-        Invoke("_fadeAndSwitch", timeUntilFadeAndSwitch);
+        if (timer) {
+            Invoke("_fadeAndSwitch", timeUntilFadeAndSwitch);
+        }
     }
 
+    void Update() {
+        if (!timer) {
+            if (OVRInput.GetDown(OVRInput.Button.Any)) {
+                _fadeAndSwitch();
+            }
+        }
+    }
     private void _fadeAndSwitch() {
         StartCoroutine(FadeAndSwitch());
     }
 
-    // Update is called once per frame
     IEnumerator FadeAndSwitch() {
         yield return faderGroup.FadeOut();
         gameManeger.NextScene();
