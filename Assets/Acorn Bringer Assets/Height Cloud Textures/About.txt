@@ -1,0 +1,72 @@
+Thanks for downloading!
+
+-------------
+| INTENTION |
+-------------
+
+These textures were created to emulate stylized cloud volumes within a day/night cycle environment. These cloud planes are meant to be placed inside the game environment and set to billboard towards the game camera.
+
+----------------
+| TEXTURE MAPS |
+----------------
+
+CLOUDS
+
+- Diffuse (D) - These are plain white TGA images with alpha transparency used as the base cloud color.
+
+- Height (H) - These are black and white PNG images that are identical to the D alpha channel but used to give the material height information.
+
+- Emission (E) - These are white and black PNG images that are similar to the H map however, it is inverted to give an optional “silver lining” effect to the clouds. Could also be used as an opacity map if used with fancier shaders.
+
+STARS
+
+- Diffuse - This is a plane white TGA with alpha transparency used to create the crisp star speckles.
+
+RAIN
+
+- Diffuse - This is a plane white TGA with alpha transparency used to create the streaks of rain. There are both a heavy lite variations of this texture.
+
+-----------
+| PREFABS |
+-----------
+
+- CloudPlane - A larger quad that you can stick the cloud materials on.
+
+- CloudSphere - The skydome mesh (sphere with fliped normals) with a single cloud material stuck on it. The UVs of this mesh are large so the cloud gets duplicated across it. The Dome UVs are also mirrored so we get no texture pinching or clipping at the poles where all the edges converge.
+
+- StarSphere - The skydome with the Star material applied. Again, because of the mesh UVs their is no stretching or pinching of the texture. Perfect for nice, crisp, clear starfields.
+
+- StreakSphere - The skydome with the StreakCloud material set on it. This material is similar to the other clouds but it is tiled and offset to create the streaks.
+
+---------------
+| OPTIMAL USE |
+---------------
+
+CLOUDS
+
+Ideally, all three maps are being used at once and the E map is changing color based on the sun color. For example, if their is a sun set, we should see dark clouds with an orange lining. By default, the E map is set to middle gray so as not to be too intrusive if disregarded.
+
+While the scene lights do a good job lighting the clouds, I recommend some sort of script to alter the D and E colors if a day/night cycle is being implemented.
+
+STARS
+
+To keep the stars looking crisp and bright, keep emission on.
+
+RAIN
+
+For a first person camera, apply this material to some sort of tall cylinder around the player so it follows them but won’t rotate with them.
+Layering these textures in front of the camera will add a good amount of depth to the rain. Be sure to slow the scrolling speed of the layers further away from the camera.
+
+------------------
+| OTHER THOUGHTS |
+------------------
+
+Something I would recommend for the clouds is using a shader that takes the alpha of the D map and fades out as the main camera approaches the clouds. This way, if the clouds are builbording, we never break the illusion that these clouds are puffy and volumetric if they flip suddenly or the camera is sliced by the plane. If your player never gets too close to the clouds, this is probably not necessary.
+
+Another consideration is to use the animal shapes sparingly. Try not to have duplicates of the same animal in the sky at once because they are more distinguishable than the normal clouds.
+
+Be sure to email me with any questions or concerns about this package.
+
+Have fun and good luck in your endeavors!
+
+- Acorn Bringer

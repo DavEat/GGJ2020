@@ -683,6 +683,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _head: {fileID: 4240646628711212}
   _playArea: {fileID: 4017258790532454}
+  _distance: 3
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1551987713877474
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +787,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 90
   orthographic: 0
   orthographic size: 5
