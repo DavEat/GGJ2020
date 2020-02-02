@@ -8,7 +8,7 @@
 		_ScrollXSpeed("X scroll speed", Range(-10, 10)) = 0
 		_ScrollYSpeed("Y scroll speed", Range(-10, 10)) = -0.4 }
 		SubShader{
-			Tags { "RenderType" = "Opaque" }
+			Tags { "RenderType" = "Transparent" }
 			LOD 200
 
 			CGPROGRAM
@@ -51,7 +51,7 @@
 				// Metallic and smoothness come from slider variables
 				o.Metallic = _Metallic;
 				o.Smoothness = _Glossiness;
-				o.Alpha = c.a;
+				o.Alpha = _Color.a;
 			}
 			ENDCG
 		}

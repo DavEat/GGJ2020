@@ -121,4 +121,9 @@ public class DraggableSnap : MonoBehaviour
             } else CandidateToSnapExit(grabbable);
         }
     }
+
+    public void DisableSnapObject()
+    {
+        m_snappedObject.gameObject.SetActive(false);
+    }
 }

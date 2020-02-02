@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CameraFaderGroup : MonoBehaviour
 {
@@ -41,6 +42,17 @@ public class CameraFaderGroup : MonoBehaviour
         }
     }
 #endif
+
+    public void FadeOutToWhiteToBlack(UnityEvent fadeEnd)
+    {
+        StartCoroutine(EFadeOutToWhiteToBlack(fadeEnd));
+    }
+    IEnumerator EFadeOutToWhiteToBlack(UnityEvent fadeEnd)
+    {
+        yield return FadeOut(true, Color.white, 1f);
+        //yield return FadeOut(true, Color.black, .4f);
+        fadeEnd.Invoke();
+    }
 
     public void FadeOutIn(Action midAction = null, Action finalAction = null, bool stopPreviousFade = false) {
         //Debug.LogError("Fade out in");

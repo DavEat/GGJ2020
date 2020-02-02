@@ -23,4 +23,8 @@ public class SphereCollision : MonoBehaviour
 
         }
     }
+    public void ResetPosition()
+    {
+        SphereManager.inst.ReplaceSphere(transform, true);
+    }
 }
