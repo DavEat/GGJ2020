@@ -24,7 +24,15 @@ public class PlayAreaManager : MonoBehaviour
 	void Update () {
 	    if (!_playerInCorrectPosition) 
 	        CheckPlayerPos();
-	}
+
+#if UNITY_EDITOR
+        //debug
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            ShowCalibrationArea(false);
+            _playerInCorrectPosition = true;
+        }
+#endif
+    }
 
     private void ShowCalibrationArea(bool show) {
         if(_geometryWrapper != null)
