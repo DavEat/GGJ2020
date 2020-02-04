@@ -5,7 +5,7 @@ public class DraggableSnap : MonoBehaviour
 {
     [SerializeField] Transform m_snapPoint = null;
     [SerializeField] GameObject m_mesh  = null;
-    [SerializeField] InteractableTag.Tag m_snapTag;
+    [SerializeField] InteractableTag.Tag m_snapTag = InteractableTag.Tag.none;
 
     OVRGrabbableEvent m_snappedObject = null;
 

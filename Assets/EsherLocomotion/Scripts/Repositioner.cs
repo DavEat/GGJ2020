@@ -8,7 +8,7 @@ public class Repositioner : MonoBehaviour
     private Ray _ray;
     private RaycastHit _hit;
     [SerializeField] float _distance = 3f;
-    [SerializeField] LayerMask _layerMask;
+    [SerializeField] LayerMask _layerMask = 0;
 
 	void Update () {
         _ray = new Ray(_head.position, -_playArea.up);

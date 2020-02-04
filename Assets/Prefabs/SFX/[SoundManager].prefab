@@ -47,12 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63aae8a88880384b92314958e345956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rollingRockClip: {fileID: 8300000, guid: 27b7896a6274404489ab4d5987b79cb8, type: 3}
-  m_rollingRockTailClip: {fileID: 8300000, guid: 5c406b0fb39797f4cb2d0db86d0ddcc9,
-    type: 3}
+  m_natureNoise: {fileID: 4844700251283970252}
   m_rollingRockSource: {fileID: 8033042181608103408}
   m_rollingRockTailSource: {fileID: 8033042181608103423}
   music: {fileID: 1625898261}
+  m_natureNoiseVolume: 0.8
 --- !u!82 &4844700251283970252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -66,7 +65,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 37b71b9992ded45468fbbb6d00322446, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -364,9 +363,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
         type: 3}
+      propertyPath: m_levelMusics.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
       propertyPath: offsetBuildIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: fadeInTime
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_mixer
+      value: 
+      objectReference: {fileID: 24300002, guid: 0408ae14c2cb4f84aa69c060ae1c2854,
+        type: 2}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: fadeOutTime
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d84345d0773dd046b5d6835754afaed, type: 3}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bf6525bfdbd0674ba49b7d50ad03f35, type: 3}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 95a2c58477103914ca8e1ec0868e41ff, type: 3}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f6703e072e1079c4b9e10b980647478a, type: 3}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: bc018efc8c6ab0e46b38a41c6464ae31, type: 3}
+    - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
+        type: 3}
+      propertyPath: m_levelMusics.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: ead085633cd0bf347956c64006228472, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fbee08f7e0f7a349b75ee50ebf642a4, type: 3}
 --- !u!4 &1625898260 stripped

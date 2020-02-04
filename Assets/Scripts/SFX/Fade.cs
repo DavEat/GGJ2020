@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fade : Singleton<Fade>
+public class Fade : MonoBehaviour
 {
-    public void FadeSound(AudioSource sourceToFade, float startVolume, float endVolume, float duration)
+    public static Fade inst;
+    void Awake() { inst = this; }
+
+    public void FadeSound(AudioSource sourceToFade, float startVolume, float endVolume, float duration, float delay = 0f)
     {
-        StartCoroutine(fadeSource(sourceToFade, startVolume, endVolume, duration));
+        StartCoroutine(fadeSource(sourceToFade, startVolume, endVolume, duration, false, delay));
     }
     public void CrossFadeSound(AudioSource toUp, AudioSource toDown, float startVolume, float endVolume, float duration)
     {
@@ -13,8 +16,11 @@ public class Fade : Singleton<Fade>
         StartCoroutine(fadeSource(toUp, startVolume, endVolume, duration));
     }
 
-    static IEnumerator fadeSource(AudioSource sourceToFade, float startVolume, float endVolume, float duration, bool stopAtEnd = false)
+    static IEnumerator fadeSource(AudioSource sourceToFade, float startVolume, float endVolume, float duration, bool stopAtEnd = false, float delay = 0f)
     {
+        if (delay > 0)
+            yield return new WaitForSeconds(delay);
+
         float startTime = Time.time;
 
         while (true)

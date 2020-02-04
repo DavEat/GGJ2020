@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayAreaMovement : MonoBehaviour
 {
     [SerializeField] float m_angularSpeedToActive = 1f;
-    [SerializeField] float m_angularSpeedToUnactive = 1f;
+    //[SerializeField] float m_angularSpeedToUnactive = 1f;
 
     public float lastAngle = 0;
 

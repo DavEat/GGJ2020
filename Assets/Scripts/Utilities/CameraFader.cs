@@ -6,7 +6,7 @@ public class CameraFader : MonoBehaviour
 {
     private Material fadeMaterial = null;
 
-    private float fadeTime = 0.5f;
+    //private float fadeTime = 0.5f;
     private bool isFading = false;
     private YieldInstruction fadeInstruction = new WaitForEndOfFrame();
 

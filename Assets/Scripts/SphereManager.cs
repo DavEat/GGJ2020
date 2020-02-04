@@ -6,7 +6,7 @@ public class SphereManager : MonoBehaviour
     void Awake() { inst = this; }
 
     [Header("Sphere")]
-    [SerializeField] DraggableSnap startSnap;
+    [SerializeField] DraggableSnap startSnap = null;
 
     public void ReplaceSphere(Transform sphere, bool dontSnap, bool grab = false)
     {

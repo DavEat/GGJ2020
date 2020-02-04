@@ -6,51 +6,24 @@ using UnityEngine.Events;
 
 public class EndLevelAnim : MonoBehaviour
 {
-    /*[SerializeField] Light m_pointLight = null;
-    [SerializeField] DraggableSnap draggable = null;
+    [SerializeField] AudioSource m_endMusic = null;
 
-    [SerializeField] bool m_play = false;
-
-    [SerializeField] float m_lightDelay = .2f, lightTime = 2f, lightTargetIntencity = 2f, lightTargetRange = 2f;
-
-    float lightStartIntencity = 0, lightStartRange = 0;
-
-    void Update()
-    {
-        if (m_play)
-        {
-            m_play = false;
-            StartAnim();
-        }
-    }
-    public void StartAnim()
-    {
-        lightStartIntencity = m_pointLight.intensity;
-        lightStartRange = m_pointLight.range;
-
-        StartCoroutine(Animation());
-    }
-    IEnumerator Animation()
-    {
-        for (float i = 0; i < 1f; i += Time.deltaTime / (m_lightDelay + lightTime))
-        {
-            m_pointLight.range = Mathf.Lerp(lightStartRange, lightTargetRange, i);
-            m_pointLight.intensity = Mathf.Lerp(lightStartIntencity, lightTargetIntencity, i);
-            yield return null;
-        }
-    }*/
-
-    [SerializeField] UnityEvent m_startAnim;
-    [SerializeField] UnityEvent m_endFade;
-    [SerializeField] UnityEvent m_end;
+    [SerializeField] UnityEvent m_startAnim = null;
+    [SerializeField] UnityEvent m_endFade = null;
 
     public void StartFade()
     {
+        QuickFadeEndMusic();
         FindObjectOfType<CameraFaderGroup>().FadeOutToWhiteToBlack(m_endFade);
     }
-    public void End()
+    public void StartLevelCompleteAnim()
     {
-        m_end.Invoke();
+        m_startAnim.Invoke();
+        SoundManager.inst.FadeOutNatureNoise();
         SoundManager.inst.music.FadeMusic();
+    }
+    public void QuickFadeEndMusic()
+    {
+        Fade.inst.FadeSound(m_endMusic, m_endMusic.volume, 0, .2f, .75f);
     }
 }

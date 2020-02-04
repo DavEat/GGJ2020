@@ -9,5 +9,5 @@ public class InteractableTag : MonoBehaviour
         plank
     }
 
-    public Tag tag;
+    public Tag tag = Tag.none;
 }
