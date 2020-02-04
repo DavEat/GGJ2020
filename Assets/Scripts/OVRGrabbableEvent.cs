@@ -11,8 +11,7 @@ public class OVRGrabbableEvent : OVRGrabbable
 
     [SerializeField] bool m_parentToGrabber = true;
 
-    override public void GrabBegin(OVRGrabber hand, Collider grabPoint)
-    {
+    override public void GrabBegin(OVRGrabber hand, Collider grabPoint) {
         base.GrabBegin(hand, grabPoint);
         if (grabBegin != null)
             grabBegin.Invoke(this);

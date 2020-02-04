@@ -2179,7 +2179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &693838392
 Transform:
   m_ObjectHideFlags: 0
@@ -2213,7 +2213,7 @@ TextMesh:
   m_FontSize: 500
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 02c2ffe6f00a97643a6f658e26655478, type: 3}
+  m_Font: {fileID: 12800000, guid: de5ccf382c144a44384bc22bfecbb7e4, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 3036676095
@@ -2235,7 +2235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c2ffe6f00a97643a6f658e26655478, type: 3}
+  - {fileID: 2100000, guid: de5ccf382c144a44384bc22bfecbb7e4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

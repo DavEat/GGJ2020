@@ -40,6 +40,7 @@ public class EndLevelAnim : MonoBehaviour
         }
     }*/
 
+    [SerializeField] UnityEvent m_startAnim;
     [SerializeField] UnityEvent m_endFade;
     [SerializeField] UnityEvent m_end;
 
