@@ -37,6 +37,28 @@ public class Fade : MonoBehaviour
             }
 
             yield return null;
-        }//end while
+        }
+    }
+
+    public static IEnumerator fadeScale(Transform toFade, float startSize, float endSize, float duration, float delay = 0f)
+    {
+        if (delay > 0)
+            yield return new WaitForSeconds(delay);
+
+        float startTime = Time.time;
+
+        while (true)
+        {
+            float elapsed = Time.time - startTime;
+
+            float scale = Mathf.Lerp(startSize, endSize, elapsed / duration);
+
+            toFade.localScale = Vector3.one * scale;
+
+            if (elapsed >= duration)
+                break;
+
+            yield return null;
+        }
     }
 }
