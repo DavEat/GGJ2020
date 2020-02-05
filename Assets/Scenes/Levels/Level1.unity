@@ -3989,11 +3989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayArea
       objectReference: {fileID: 0}
-    - target: {fileID: 2851820649499215960, guid: 264f285b4bf885043838fb18be64ee07,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4105011758539894244, guid: 264f285b4bf885043838fb18be64ee07,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4048,11 +4043,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465738001556846384, guid: 264f285b4bf885043838fb18be64ee07,
-        type: 3}
-      propertyPath: far clip plane
-      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5905088742712489928, guid: 264f285b4bf885043838fb18be64ee07,
         type: 3}
