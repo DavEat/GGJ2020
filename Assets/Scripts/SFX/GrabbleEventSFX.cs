@@ -7,6 +7,10 @@ public class GrabbleEventSFX : MonoBehaviour
     [SerializeField] AudioClip m_grabSound = null;
     [SerializeField] AudioClip m_hitSound = null;
 
+    [Header("Roll")]
+    [SerializeField] AudioClip m_rollSound = null;
+    [SerializeField] AudioClip m_rollInPipeSound = null;
+
     [SerializeField] AudioSource m_source = null;
     [SerializeField] AudioSource m_rollSource = null;
 
@@ -16,6 +20,8 @@ public class GrabbleEventSFX : MonoBehaviour
     [SerializeField] float m_rollingMaxSpeed = 1;
     [SerializeField] AnimationCurve m_volumeCurve = null;
     [SerializeField] AnimationCurve m_pitchCurve = null;
+
+    readonly public static string PIPE_TAG = "Pipe";
 
     void Start()
     {
@@ -34,8 +40,11 @@ public class GrabbleEventSFX : MonoBehaviour
         if (m_grabbableEvent.isGrabbed)
             return;
 
+        if (collision.collider.CompareTag(PIPE_TAG))
+            m_rollSource.clip = m_rollInPipeSound;
+        else m_rollSource.clip = m_rollSound;
+
         var speed = m_rb.velocity.magnitude;
-        Debug.Log("speed= " + speed);
 
         // normalize speed into 0-1
         var scaledVelocity = Remap(Mathf.Clamp(speed, 0, m_rollingMaxSpeed), 0, m_rollingMaxSpeed, 0, 1);

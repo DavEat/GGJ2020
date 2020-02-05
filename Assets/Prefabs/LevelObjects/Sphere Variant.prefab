@@ -38,7 +38,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110418356}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 7e50e42c8ac68da4dbc20d4c7508c628,
     type: 2}
@@ -53,9 +53,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.01
-  MaxDistance: 0.5
+  MaxDistance: 0.7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -63,23 +63,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.02
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7810683
+      value: 0.7827349
+      inSlope: -0.6757026
+      outSlope: -0.6757026
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.16075075
+      outWeight: 0.81011623
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.0204082
+      outSlope: -1.0204082
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -163,9 +172,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.2
-  MaxDistance: 500
+  MaxDistance: 2
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -173,23 +182,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.1
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.8529845
+      value: 0.6798182
+      inSlope: -0.2591121
+      outSlope: -0.2591121
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.28166524
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1.1111112
+      outSlope: -1.1111112
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -423,6 +441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_grabSound: {fileID: 8300000, guid: 4c6e0c534c7094c4695d651e0bbaaf77, type: 3}
   m_hitSound: {fileID: 8300000, guid: 00d2d83924f04e44a9ebb0d24f17d6dd, type: 3}
+  m_rollSound: {fileID: 8300000, guid: 24cba3bd6fc70454aa8bdc689bb4cc5b, type: 3}
+  m_rollInPipeSound: {fileID: 8300000, guid: 7d0c671e98535b1438012eff0566d4b5, type: 3}
   m_source: {fileID: 1663822129}
   m_rollSource: {fileID: 438258060242189142}
   m_rollingMaxSpeed: 1
