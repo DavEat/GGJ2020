@@ -1,22 +1,43 @@
 ﻿using UnityEngine;
 
-//Disables grabbing when hand in nograb zone
+/// <summary>Disables grabbing when hand in nograb zone</summary>
 public class GrabManager : MonoBehaviour
 {
     public OVRGrabber grabber;
     public LayerMask noGrabLayers;
 
-    private bool _canGrab;
+    bool m_isInGrabZone = false;
 
-    void Update() {
-        if (_canGrab == IsInNoGrabZone()) {
-            _canGrab = !IsInNoGrabZone();
-        }
-        grabber.enabled = _canGrab;
+    [SerializeField] LayerMask m_default = 0;
+    [SerializeField] LayerMask m_ignoreCollision = 0;
 
+    Collider[] m_colliders = null;
+
+    void Start()
+    {
+        m_colliders = GetComponentsInChildren<Collider>(true);
     }
 
-    private bool IsInNoGrabZone() {
+    void FixedUpdate()
+    {
+        bool iigz = IsInNoGrabZone();
+        if (iigz != m_isInGrabZone)
+        {
+            m_isInGrabZone = iigz;
+
+            SetLayer(m_isInGrabZone ? m_ignoreCollision : m_default);
+        }       
+    }
+
+    bool IsInNoGrabZone()
+    {
         return Physics.OverlapSphere(transform.position, 0.05f, noGrabLayers).Length > 0;
+    }
+    void SetLayer(LayerMask layer)
+    {
+        for (int i = 0; i < m_colliders.Length; i++)
+        {
+            m_colliders[i].gameObject.layer = (int)Mathf.Log(layer.value, 2);
+        }
     }
 }
