@@ -380,7 +380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_mixer
       value: 
-      objectReference: {fileID: 24300002, guid: 0408ae14c2cb4f84aa69c060ae1c2854,
+      objectReference: {fileID: -3621049184154442543, guid: 0408ae14c2cb4f84aa69c060ae1c2854,
         type: 2}
     - target: {fileID: 1540386347003302301, guid: 8fbee08f7e0f7a349b75ee50ebf642a4,
         type: 3}

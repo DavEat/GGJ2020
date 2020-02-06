@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.091962986, g: 0.2819445, b: 0.4851135, a: 1}
+  m_IndirectSpecularColor: {r: 0.09027537, g: 0.28189546, b: 0.4860105, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -396,22 +396,22 @@ PrefabInstance:
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 6.74e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.4034e-41
+      value: 2.3510647e-38
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 6.74e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462097, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -5.6038996e-10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222588663531462098, guid: a61ac44203e72f641adc5cb92abd25da,
         type: 3}
@@ -2863,6 +2863,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4446342434328919597, guid: 264f285b4bf885043838fb18be64ee07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5905088742712489928, guid: 264f285b4bf885043838fb18be64ee07,
         type: 3}
       propertyPath: _startPosition
@@ -3529,7 +3534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3931,7 +3936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4161,7 +4166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ebc45ba3ff076884e92c0f152cc3b98e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4947,11 +4952,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 4.5904e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0
+      value: 2.3510647e-38
       objectReference: {fileID: 0}
     - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: m_BoundingSphereOverride.z
@@ -4959,7 +4964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289176107, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: NaN
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 387949556, guid: 28a15f99c9597d749b28010cc3df742c, type: 3}
       propertyPath: target
