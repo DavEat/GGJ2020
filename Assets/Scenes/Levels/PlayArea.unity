@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c1aa8d5a3ccb24d8f2b8c5470e8fec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 1
   timeUntilFadeAndSwitch: 8
   faderGroup: {fileID: 8420604635838946219}
   gameManeger: {fileID: 452150684}
@@ -417,8 +418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textMesh: {fileID: 530826982}
-  _okCOlor: {r: 1, g: 1, b: 1, a: 0.78431374}
-  _smallColor: {r: 0.8679245, g: 0.29067284, b: 0.29067284, a: 1}
+  _okCOlor: {r: 0.413105, g: 0.8207547, b: 0.38327694, a: 0.34901962}
+  _smallColor: {r: 0.8679245, g: 0.29067284, b: 0.29067284, a: 0.34901962}
   _playAreaSquare: {fileID: 453042273}
 --- !u!102 &530826982
 TextMesh:
@@ -1087,6 +1088,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8186816212683527457}
     m_Modifications:
+    - target: {fileID: 1344957405899784, guid: 62db4f14f0bbaee4fac3aefd445af5c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1667023531481180, guid: 62db4f14f0bbaee4fac3aefd445af5c9, type: 3}
       propertyPath: m_Name
       value: StartEnvironmentWrapper
@@ -1096,6 +1101,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1929133453900270, guid: 62db4f14f0bbaee4fac3aefd445af5c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932851369457130, guid: 62db4f14f0bbaee4fac3aefd445af5c9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
